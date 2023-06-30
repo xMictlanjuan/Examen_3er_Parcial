@@ -1,243 +1,312 @@
-create table tabla1 (
-id number (10),
-nombre nvarchar2 (50),
-precio number (15),
-Num_tipo number (25),
-Num_mar number (25)
-);
+   create table tabla1 (
+    id number (10),
+    nombre nvarchar2 (50),
+    precio number (15),
+    Num_tipo number (25),
+    Num_mar number (25)
+    );
+    
+    select * from tabla1;
+    drop table tabla1;
+    delete tabla1;
 
-select * from tabla1;
-drop table tabla1;
-delete tabla1;
-
-
-
-
-insert into tabla1  values (1,'Orejita', 18, 1, 12);
-insert into tabla1  values (2,'Pizza', 22, 7, 1);
-insert into tabla1  values (3,'Sopa fria', 16, 7, 1);
-insert into tabla1  values (4,'Sushi', 23, 7,1);
-insert into tabla1  values (5,'Tacos dorados', 27, 7, 1);
-insert into tabla1  values (6,'Gomitas', 14, 5, 10);
-insert into tabla1  values (7,'Ensalada', 17, 10, 1);
-insert into tabla1  values (8,'Palomitas',13 , 2, 1);
-insert into tabla1  values (9,'Sandwich', 15, 7,1);
-insert into tabla1  values (10,'Papas a la francesa', 25, 7, 1);
-insert into tabla1  values (11,'Hot dogs', 20, 7, 1);
-insert into tabla1  values (12,'Pambazos', 26, 7, 1);
-insert into tabla1  values (13,'Gorditas', 22, 7,1);
-insert into tabla1  values (14,'Quesadillas', 18, 7,1);
-insert into tabla1  values (15,'Sopes', 22, 7,1);
-insert into tabla1  values (16,'Tamales', 27, 7,1);
-insert into tabla1  values (17,'Cuernitos', 15, 7, 1);
-insert into tabla1  values (18,'Tacos', 23, 7,1);
-insert into tabla1  values (19,'Coctel de Frutas', 17, 9,1);
-insert into tabla1  values (20,'Paleta de Hielo', 12, 8,1);
-insert into tabla1  values (21,'Chocolate', 10, 5, 9);
-insert into tabla1  values (22,'Sincronizadas', 17, 7, 1);
-insert into tabla1  values (23,'Hamburguesa sencilla', 25, 7,1);
-insert into tabla1  values (24,'Tortas', 25, 7,1);
-insert into tabla1  values (25,'Yogurth', 12, 6,8);
-insert into tabla1  values (26,'Agua', 13, 3, 4);
-insert into tabla1  values (27,'Cafe', 16, 3,7);
-insert into tabla1  values (28,'Frappes', 18, 3,1);
-insert into tabla1  values (29,'Lunetas', 12, 5,10);
-insert into tabla1  values (30,'Paleta', 13, 5, 6);
-insert into tabla1  values (31, 'Chicle', 4, 4,5);
-insert into tabla1  values (32,'Refresco', 17, 3,4);
-insert into tabla1  values (33,'Jugo', 15, 3,1);
-insert into tabla1  values (34,'Galletas', 12, 1,3);
-insert into tabla1  values (35,'Cacahuates', 8, 2,11);
-insert into tabla1  values (36,'Papas originales', 20, 2,2);
-insert into tabla1  values (37,'Mantecadas ',25 , 1,12);
-insert into tabla1  values (38,'Mazapan ',12 , 5,6);
-insert into tabla1  values (39,'Duvalin ', 8, 5,6);
-insert into tabla1  values (40,'Pulparindo',10 , 5,6);
-insert into tabla1  values (41,'Takis ', 20, 2,2);
-insert into tabla1  values (42,'Licuado ',35 , 3,1);
-insert into tabla1  values (43,'Latte ',21 , 3,7);
-insert into tabla1  values (44,'Capuchino',27 , 3,7);
-insert into tabla1  values (45,'Bombones ', 5, 5,6);
-insert into tabla1  values (46,'Te',15 , 3,1);
-insert into tabla1  values (47,'Empanadas',30 , 7 ,1);
-insert into tabla1  values (48,'Jicama',17 , 9,1);
-insert into tabla1  values (49,'Nuggets ',35 ,7,1);
-insert into tabla1  values (50,'Torta de tamal',23 ,7,1);
-insert into tabla1  values (51,'Nachos con carne',39 ,7,1);
-insert into tabla1  values (52,'Nachos con queso',32 ,7,1);
-insert into tabla1  values (53,'Enchiladas',45 ,7,1);
-insert into tabla1  values (54,'Chilaquiles ',42 ,7,1);
-insert into tabla1  values (55,'Desayuno ',65 ,7,1);
-insert into tabla1  values (56,'Picafresas ',3 ,5,6);
-insert into tabla1  values (57,'Paleta semaforo ',5 ,5,6);
-insert into tabla1  values (58,'Manita ',5 ,5,6);
-insert into tabla1  values (59,'Papas adobadas',20,2,2);
-insert into tabla1  values (60,'Fresca ',16 ,3,4);
-insert into tabla1  values (61,'Mundet ',17 ,3,4);
-insert into tabla1  values (62,'Fanta ',16 ,3,4);
-insert into tabla1  values (63,'Sprite ',17 ,3,4);
-insert into tabla1  values (64,'Paleta hielo Carlos V',25 ,8,9);
-insert into tabla1  values (65,'Cacahuates enchilados', 11, 2,11);
-insert into tabla1  values (66,'Donitas ',28 ,1, 12);
-insert into tabla1  values (67,'Cacahuates con ajo', 11, 2,11);
-insert into tabla1  values (68,'Yogurth sabor', 15, 6,8);
-insert into tabla1  values (69,'Papas de limon', 23, 2,2);
-insert into tabla1  values (70,'Kranky', 14, 5, 10);
-insert into tabla1  values (71,'Hamburguesa hawaiana', 35, 7, 1);
-insert into tabla1  values (72,'Arroz', 21, 7,1);
-insert into tabla1  values (73,'Panditas', 18, 5, 10);
-insert into tabla1  values (74,'Bubulubu', 10, 5,10);
-insert into tabla1  values (75,'Crujitos', 20, 2,2);
-
-
-
-select count (Num_mar) from tabla1 where Num_mar = 'Tesoem';
-select count (nombre) from tabla1 where nombre like 'T%';
-select * from tabla1;
-
-Create Table Tabla2 (
-Id2 Number (20),
-Tipo Nvarchar2 (50)
-);
-
-select * from tabla2;
-drop table tabla2;
-delete tabla2 where id > 15; 
-
-DROP SEQUENCE ID2;
-
-create sequence id2
-start with 1
-increment by 1 
-maxvalue 20
-minvalue 1;
-
-create or replace trigger t_sec
-before insert 
-on tabla1
-for each row
-begin 
-    insert into tabla2 values (secuencia.nextval,'Alcohol');
-end t_sec;
-
-
-insert into tabla2 values (id2.nextval,'Pan');
-insert into tabla2 values (id2.nextval,'Fritura');
-insert into tabla2 values (id2.nextval,'Bebidas');
-insert into tabla2 values (id2.nextval,'Goma de mascar');
-insert into tabla2 values (id2.nextval,'Dulce');
-insert into tabla2 values (id2.nextval,'Lacteo');
-insert into tabla2 values (id2.nextval,'Comida');
-insert into tabla2 values (id2.nextval,'Helado');
-insert into tabla2 values (id2.nextval,'Fruta');
-insert into tabla2 values (id2.nextval,'Vegetales');
-insert into tabla2 values (id2.nextval,'Higiene personal');
-insert into tabla2 values (id2.nextval,'Limpieza');
-insert into tabla2 values (id2.nextval,'Alcohol');
-insert into tabla2 values (id2.nextval,'Perfume');
-insert into tabla2 values (id2.nextval,'Tabaco');
-
-
-create table tabla3 (
-id3 number (20),
-marca nvarchar2 (50)
-);
-
-select * from tabla3;
-drop table tabla3;
-delete tabla3;
-
-create sequence id3
-start with 1
-increment by 1 
-maxvalue 20
-minvalue 1;
-
-insert into tabla3  values (1,'Tesoem');
-insert into tabla3  values (2,'Sabritas');
-insert into tabla3  values (3,'Gamesa');
-insert into tabla3  values (4,'Coca Cola');
-insert into tabla3  values (5,'Trident');
-insert into tabla3  values (6,'Vero');
-insert into tabla3  values (7,'Nescafe');
-insert into tabla3  values (8,'Yoplait');
-insert into tabla3  values (9,'Carlos V');
-insert into tabla3  values (10,'Ricolino');
-insert into tabla3  values (11,'Karate');
-insert into tabla3  values (12,'Bimbo');
-insert into tabla3  values (13,'Malvoro');
-insert into tabla3  values (14,'Victoria');
-insert into tabla3  values (15,'Xbox');
-insert into tabla3  values (16,'Ford');
-insert into tabla3  values (17,'Gucci');
-
---JOINs-----------------------------------------------------
-
---Full join uniendo las 3 tablas donde mandamos a llamar (nombre, precio de la tabla_1), tipo de la tabla_2, y marca de la tabla_3 --
-
-select tabla1.nombre, tabla1.precio, tabla2.tipo, tabla3.marca from tabla2 full join tabla1  ON tabla2.id2 = tabla1.Num_tipo full join tabla3 ON tabla3.id3 = tabla1.Num_mar;
-
-------------------------------------------------------------------------------------------------------
---Inner join uniendo tabla_1 y tabla_3 donde solo muestre los productos que son de parte del puesto de 6acos de canasta 
-
-select *from tabla1 inner join tabla3 on Num_mar=id where marca='Tacos de canasta';
-
-------------------------------------------------------------------------------------------------------
---Left join con relación de la tabla_1 y tabla_2 --
-
-select *from tabla1 left join tabla2 on num_tipo= id2;
-
-------------------------------------------------------------------------------------------------------
---Right join sin relación de la tabla_1 y tabla_3 --
-
-select *from tabla1 right join tabla3 on Num_mar=id3 where id3 is null;  
-
-------------------------------------------------------------------------------------------------------
---Full join sin relación de las 3 tablas (tabla_1, tabla_2, tabla_3)--
-
-select *from tabla1 full join tabla2 on Num_tipo=id2 full join tabla3 on Num_mar=id3 where Num_tipo is null;
-
-------------------------------------------------------------------------------------------------------
---Join de las 3 tablas donde muestre los productos que empiecen con la letra  "b y p" --
-
-select *from tabla1 full join tabla2 on Num_tipo=id2 full join tabla3 on Num_mar=id3  where nombre like 'p%'; 
-
-
-
-
-
-
-
-create table tabla4 (
-id number (5),
-descripción nvarchar2 (60)
-);
-
-select * from tabla4;
-delete tabla4;
-
-create or replace trigger tr_vitamina_t
-after insert
-on tabla1
-for each row
-when (new.nombre like 'T%') 
-begin
-insert into tabla4 values (id3.nextval,'Se inserto un producto con la vitamina T ,'|| :new.nombre);
-end tr_vitamina_t;
-
-
-drop trigger tr_t;
-insert into tabla1  values (76,'Tortillas', 20, 'Fritura', 'Sabritas');
-insert into tabla1  values (77,'Totopos', 20, 'Fritura', 'Sabritas');
-insert into tabla1  values (78,'Toptops', 20, 'Fritura', 'Sabritas');
-
-
-select * from tabla1;
-
-
-create or replace view treinta
-as
-select id,nombre, Nu
-from tabla1 where id>30 and id<=42;
-
-select * from treinta;
+    insert into tabla1  values (1,'Orejita', 18, 1, 12);
+    insert into tabla1  values (2,'Pizza', 22, 7, 1);
+    insert into tabla1  values (3,'Sopa fria', 16, 7, 1);
+    insert into tabla1  values (4,'Sushi', 23, 7,1);
+    insert into tabla1  values (5,'Tacos dorados', 27, 7, 1);
+    insert into tabla1  values (6,'Gomitas', 14, 5, 10);
+    insert into tabla1  values (7,'Ensalada', 17, 10, 1);
+    insert into tabla1  values (8,'Palomitas',13 , 2, 1);
+    insert into tabla1  values (9,'Sandwich', 15, 7,1);
+    insert into tabla1  values (10,'Papas a la francesa', 25, 7, 1);
+    insert into tabla1  values (11,'Hot dogs', 20, 7, 1);
+    insert into tabla1  values (12,'Pambazos', 26, 7, 1);
+    insert into tabla1  values (13,'Gorditas', 22, 7,1);
+    insert into tabla1  values (14,'Quesadillas', 18, 7,1);
+    insert into tabla1  values (15,'Sopes', 22, 7,1);
+    insert into tabla1  values (16,'Tamales', 27, 7,1);
+    insert into tabla1  values (17,'Cuernitos', 15, 7, 1);
+    insert into tabla1  values (18,'Tacos', 23, 7,1);
+    insert into tabla1  values (19,'Coctel de Frutas', 17, 9,1);
+    insert into tabla1  values (20,'Paleta de Hielo', 12, 8,1);
+    insert into tabla1  values (21,'Chocolate', 10, 5, 9);
+    insert into tabla1  values (22,'Sincronizadas', 17, 7, 1);
+    insert into tabla1  values (23,'Hamburguesa sencilla', 25, 7,1);
+    insert into tabla1  values (24,'Tortas', 25, 7,1);
+    insert into tabla1  values (25,'Yogurth', 12, 6,8);
+    insert into tabla1  values (26,'Agua', 13, 3, 4);
+    insert into tabla1  values (27,'Cafe', 16, 3,7);
+    insert into tabla1  values (28,'Frappes', 18, 3,1);
+    insert into tabla1  values (29,'Lunetas', 12, 5,10);
+    insert into tabla1  values (30,'Paleta', 13, 5, 6);
+    insert into tabla1  values (31, 'Chicle', 4, 4,5);
+    insert into tabla1  values (32,'Refresco', 17, 3,4);
+    insert into tabla1  values (33,'Jugo', 15, 3,1);
+    insert into tabla1  values (34,'Galletas', 12, 1,3);
+    insert into tabla1  values (35,'Cacahuates', 8, 2,11);
+    insert into tabla1  values (36,'Papas originales', 20, 2,2);
+    insert into tabla1  values (37,'Mantecadas ',25 , 1,12);
+    insert into tabla1  values (38,'Mazapan ',12 , 5,6);
+    insert into tabla1  values (39,'Duvalin ', 8, 5,6);
+    insert into tabla1  values (40,'Pulparindo',10 , 5,6);
+    insert into tabla1  values (41,'Takis ', 20, 2,2);
+    insert into tabla1  values (42,'Licuado ',35 , 3,1);
+    insert into tabla1  values (43,'Latte ',21 , 3,7);
+    insert into tabla1  values (44,'Capuchino',27 , 3,7);
+    insert into tabla1  values (45,'Bombones ', 5, 5,6);
+    insert into tabla1  values (46,'Te',15 , 3,1);
+    insert into tabla1  values (47,'Empanadas',30 , 7 ,1);
+    insert into tabla1  values (48,'Jicama',17 , 9,1);
+    insert into tabla1  values (49,'Nuggets ',35 ,7,1);
+    insert into tabla1  values (50,'Torta de tamal',23 ,7,1);
+    insert into tabla1  values (51,'Nachos con carne',39 ,7,1);
+    insert into tabla1  values (52,'Nachos con queso',32 ,7,1);
+    insert into tabla1  values (53,'Enchiladas',45 ,7,1);
+    insert into tabla1  values (54,'Chilaquiles ',42 ,7,1);
+    insert into tabla1  values (55,'Desayuno ',65 ,7,1);
+    insert into tabla1  values (56,'Picafresas ',3 ,5,6);
+    insert into tabla1  values (57,'Paleta semaforo ',5 ,5,6);
+    insert into tabla1  values (58,'Manita ',5 ,5,6);
+    insert into tabla1  values (59,'Papas adobadas',20,2,2);
+    insert into tabla1  values (60,'Fresca ',16 ,3,4);
+    insert into tabla1  values (61,'Mundet ',17 ,3,4);
+    insert into tabla1  values (62,'Fanta ',16 ,3,4);
+    insert into tabla1  values (63,'Sprite ',17 ,3,4);
+    insert into tabla1  values (64,'Paleta hielo Carlos V',25 ,8,9);
+    insert into tabla1  values (65,'Cacahuates enchilados', 11, 2,11);
+    insert into tabla1  values (66,'Donitas ',28 ,1, 12);
+    insert into tabla1  values (67,'Cacahuates con ajo', 11, 2,11);
+    insert into tabla1  values (68,'Yogurth sabor', 15, 6,8);
+    insert into tabla1  values (69,'Papas de limon', 23, 2,2);
+    insert into tabla1  values (70,'Kranky', 14, 5, 10);
+    insert into tabla1  values (71,'Hamburguesa hawaiana', 35, 7, 1);
+    insert into tabla1  values (72,'Arroz', 21, 7,1);
+    insert into tabla1  values (73,'Panditas', 18, 5, 10);
+    insert into tabla1  values (74,'Bubulubu', 10, 5,10);
+    insert into tabla1  values (75,'Crujitos', 20, 2,2);
+    
+    select * from tabla1;
+    
+    Create Table Tabla2 (
+    Id2 Number (20),
+    Tipo Nvarchar2 (50)
+    );
+    
+    select * from tabla2;
+    drop table tabla2;
+    delete tabla2; 
+    
+    DROP SEQUENCE ID2;
+    
+    create sequence id2
+    start with 1
+    increment by 1 
+    maxvalue 100
+    minvalue 1;
+    
+    drop trigger tr_tipo;
+    
+    create or replace trigger tr_tipo
+    after insert 
+    on tabla1
+    for each row
+    begin 
+    if :new.num_tipo = 1 then 
+        insert into tabla2 values (id2.nextval,'Pan');
+        elsif
+    :new.num_tipo = 2 then
+        insert into tabla2 values (id2.nextval,'Fritura');
+        elsif
+    :new.num_tipo = 3 then 
+        insert into tabla2 values (id2.nextval,'Bebidas');
+        elsif
+    :new.num_tipo = 4 then 
+        insert into tabla2 values (id2.nextval,'Goma de Mascar');
+        elsif
+    :new.num_tipo = 5 then 
+        insert into tabla2 values (id2.nextval,'Dulce');
+         elsif
+    :new.num_tipo = 6 then 
+        insert into tabla2 values (id2.nextval,'Lacteo');
+         elsif
+    :new.num_tipo = 7 then 
+        insert into tabla2 values (id2.nextval,'Comida');
+         elsif
+    :new.num_tipo = 8 then 
+        insert into tabla2 values (id2.nextval,'Helado');
+         elsif
+    :new.num_tipo = 9 then 
+        insert into tabla2 values (id2.nextval,'Fruta');
+         elsif
+    :new.num_tipo = 10 then 
+        insert into tabla2 values (id2.nextval,'Vegetales');
+        elsif
+    :new.num_tipo = 11 then 
+        insert into tabla2 values (id2.nextval,'Higiene personal');
+        elsif
+    :new.num_tipo = 12 then 
+        insert into tabla2 values (id2.nextval,'Limpieza');
+        elsif
+    :new.num_tipo = 13 then 
+        insert into tabla2 values (id2.nextval,'Alcohol');
+        elsif
+    :new.num_tipo = 14 then 
+        insert into tabla2 values (id2.nextval,'Perfume');
+        elsif
+    :new.num_tipo = 15 then 
+        insert into tabla2 values (id2.nextval,'Tabaco');
+        end if;
+    end tr_tipo;
+    
+    
+    
+    
+    -----------------------------------------------------------------------------------------------------------------
+    create table tabla3 (
+    id3 number (20),
+    marca nvarchar2 (50)
+    );
+    
+    select * from tabla3;
+    drop table tabla3;
+    delete tabla3;
+    
+    create sequence id4
+    start with 1
+    increment by 1 
+    maxvalue 100
+    minvalue 1;  
+    
+    drop sequence id4;
+    
+    create or replace trigger tr_marca
+    after insert 
+    on tabla1
+    for each row
+    begin 
+    if :new.num_mar = 1 then 
+        insert into tabla3 values (id4.nextval,'Tesoem');
+        elsif
+    :new.num_mar = 2 then
+        insert into tabla3 values (id4.nextval,'Sabritas');
+        elsif
+    :new.num_mar = 3 then 
+        insert into tabla3 values (id4.nextval,'Gamesa');
+        elsif
+    :new.num_mar = 4 then 
+        insert into tabla3 values (id4.nextval,'Coca Cola');
+        elsif
+    :new.num_mar = 5 then 
+        insert into tabla3 values (id4.nextval,'Trident');
+         elsif
+    :new.num_mar = 6 then 
+        insert into tabla3 values (id4.nextval,'Vero');
+         elsif
+    :new.num_mar = 7 then 
+        insert into tabla3 values (id4.nextval,'Nescafe');
+         elsif
+    :new.num_mar = 8 then 
+        insert into tabla3 values (id4.nextval,'Yoplait');
+         elsif
+    :new.num_mar = 9 then 
+        insert into tabla3 values (id4.nextval,'Carlos V');
+         elsif
+    :new.num_mar = 10 then 
+        insert into tabla3 values (id4.nextval,'Ricolino');
+        elsif
+    :new.num_mar = 11 then 
+        insert into tabla3 values (id4.nextval,'Karate');
+        elsif
+    :new.num_mar = 12 then 
+        insert into tabla3 values (id4.nextval,'Bimbo');
+        elsif
+    :new.num_mar = 13 then 
+        insert into tabla3 values (id4.nextval,'Malvoro');
+        elsif
+    :new.num_mar = 14 then 
+        insert into tabla3 values (id4.nextval,'Victoria');
+        elsif
+    :new.num_mar = 15 then 
+        insert into tabla3 values (id4.nextval,'Xbox');
+        elsif
+    :new.num_mar = 16 then 
+        insert into tabla3 values (id4.nextval,'Ford');
+        elsif
+    :new.num_mar = 17 then 
+        insert into tabla3 values (id4.nextval,'Gucci');
+        end if;
+    end tr_marca;
+    
+    --JOINs-----------------------------------------------------
+    
+    --Full join uniendo las 3 tablas donde mandamos a llamar (nombre, precio de la tabla_1), tipo de la tabla_2, y marca de la tabla_3 --
+    
+    select tabla1.nombre, tabla1.precio, tabla2.tipo, tabla3.marca from tabla2 full join tabla1  ON tabla2.id2 = tabla1.Num_tipo full join tabla3 ON tabla3.id3 = tabla1.Num_mar;
+    
+    ------------------------------------------------------------------------------------------------------
+    --Inner join uniendo tabla_1 y tabla_3 donde solo muestre los productos que son de parte del puesto de 6acos de canasta 
+    
+    select *from tabla1 inner join tabla3 on Num_mar=id where marca='Tacos de canasta';
+    
+    ------------------------------------------------------------------------------------------------------
+    --Left join con relación de la tabla_1 y tabla_2 --
+    
+    select *from tabla1 left join tabla2 on num_tipo= id2;
+    
+    ------------------------------------------------------------------------------------------------------
+    --Right join sin relación de la tabla_1 y tabla_3 --
+    
+    select *from tabla1 right join tabla3 on Num_mar=id3 where id3 is null;  
+    
+    ------------------------------------------------------------------------------------------------------
+    --Full join sin relación de las 3 tablas (tabla_1, tabla_2, tabla_3)--
+    
+    select *from tabla1 full join tabla2 on Num_tipo=id2 full join tabla3 on Num_mar=id3 where Num_tipo is null;
+    
+    ------------------------------------------------------------------------------------------------------
+    --Join de las 3 tablas donde muestre los productos que empiecen con la letra  "b y p" --
+    
+    select *from tabla1 full join tabla2 on Num_tipo=id2 full join tabla3 on Num_mar=id3  where nombre like 'p%'; 
+    
+    
+    
+    create sequence id3
+    start with 1
+    increment by 1 
+    maxvalue 100
+    minvalue 1;    
+    
+    create table tabla4 (
+    id number (5),
+    descripción nvarchar2 (60)
+    );
+    
+    select * from tabla4;
+    delete tabla4;
+    
+    create or replace trigger tr_vitamina_t
+    after insert
+    on tabla1
+    for each row
+    when (new.nombre like 'T%') 
+    begin
+    insert into tabla4 values (id3.nextval,'Se inserto un producto con la vitamina T ,'|| :new.nombre);
+    end tr_vitamina_t;
+    
+    
+    drop trigger tr_vitamina_t;
+    insert into tabla1  values (76,'Tortillas', 20, 'Fritura', 'Sabritas');
+    insert into tabla1  values (77,'Totopos', 20, 'Fritura', 'Sabritas');
+    insert into tabla1  values (78,'Toptops', 20, 'Fritura', 'Sabritas');
+    
+    
+    select * from tabla1;
+    
+    
+    create or replace view treinta
+    as
+    select id,nombre
+    from tabla1 where id>30 and id<=40;
+    
+    select * from treinta;
